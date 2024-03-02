@@ -1,0 +1,17 @@
+[package]
+name = "wasm-within-wasm"
+authors = ["Stuart Dum <stuart.dum@gmail.com>"]
+description = "WASM all the way down"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1"
+sailfish = "0.8.3"
+spin-sdk = "2.2.0"
+
+[workspace]
+members = ["wasm"]
